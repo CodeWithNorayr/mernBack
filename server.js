@@ -26,7 +26,7 @@ app.use(express.json());
 // ✅ Enable CORS for frontend
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173", // fallback for dev
+    origin: "https://mernfront-ijcd.onrender.com",
     credentials: true,
   })
 );
