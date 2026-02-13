@@ -55,13 +55,13 @@ app.get("/", (_, res) => {
 // ============================
 const startServer = async () => {
   try {
-    // Connect to MongoDB
-    connectDb();
+    // ✅ Wait for MongoDB connection
+    await connectDb();
 
-    // Connect to Cloudinary
+    // ✅ Wait for Cloudinary connection
     await connectCloudinary();
 
-    // Start Express server
+    // ✅ Start server only after everything is ready
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
