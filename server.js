@@ -26,7 +26,7 @@ app.use(express.json());
 // ✅ Enable CORS for frontend
 app.use(
   cors({
-    origin: "https://mernfront-ijcd.onrender.com",
+    origin: "https://lms-frontend-fn0z.onrender.com",
     credentials: true,
   })
 );
