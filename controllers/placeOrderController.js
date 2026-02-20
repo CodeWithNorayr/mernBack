@@ -5,7 +5,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export const placeOrder = async (req, res) => {
-  const frontend_url = "https://mernfront-ijcd.onrender.com";
+  const frontend_url = "https://lms-frontend-fn0z.onrender.com";
 
   try {
     const { items, address, amount } = req.body;
